@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
+    <meta name="Keywords" content="lista, palabras, clave" />
+    <meta name="Description" content="Descripción del sitio web" />
+    <meta http-equiv="Content-Language" content="es" />  
+    <link rel="icon" type="image/png" href="imagen.png">
+<!--<link rel="stylesheet" type="text/css" href="css/estilo3.css"  />--> 
+<!-- favicon--<link rel="icon" type="image/png" href="imagen.png">-->
+<!--ESTILOS INCLUIDO EN CSS-->
+<style type="text/css">
+    nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:14px;
+      } 
+      nav li{
+      display:inline-block;
+      width:10%;
+      padding:5px 10px;
+      background-color:rgb(248, 4, 4);
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      }
+      nav li:hover{
+      background-color:#fff;
+      color:#000;
+      }
+      img {
+  height: 100px;
+}
+</style>
+<title>Formulario</title>
+</head>
+
+<body>
+   
+     <!--MENU HORIZONTAL-->
+  <nav><ul>
+
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Quiénes somos</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul></nav>
+
+<!--Fin Menu -->
+
+  <h1>Formulario</h1>
+ <!--FORMULARIO-->
+ <form action ="Unititled-1.php" method="POST" name="NOMBRE DEL FORMULARIO">
+    <fieldset>
+    <legend>Zona de datos personales</legend>
+    <div>
+      <label for="campo01">Nombre:</label>
+      <input type="text" id="campo01" name="nombre"/>
+    </div>
+    <div>
+      <label for="campo02">Apellidos:</label>
+      <input type="text" id="campo02" name="apellidos" />
+    </div>
+    <div>
+      <label for="campo03">Calle:</label>
+      <input type="text" id="campo03" name="calle" />
+    </div>
+    <div>
+      <label for="campo04">Localidad:</label>
+      <input type="text" id="campo04" name="localidad"/>
+    </div>
+    <div>
+      <label for="campo05">Provincia:</label>
+      <input type="text" id="campo05" name="provincia" />
+      <label for="campo06">C&oacute;digo Postal:</label>
+      <input type="text" id="campo06" name="cp" />
+    </div>
+    <div>
+      <label for="campo07">E-mail:</label>
+      <input type="text" id="campo07" name="email" />
+    </div>
+    </fieldset>
+    <fieldset>
+     <legend>Sugerencias y criticas</legend>
+      <div>
+       <label for="campo08">Por favor, introduzca cualquier sugerencia o critica positiva:</label>
+       <p><textarea name="Sugerencias" rows="10" cols="50" id="campo08"></textarea></p>
+      </div>
+      <div>
+       <label for="campo09">Introduzca sus criticas:</label>
+       <p><textarea name="Criticas" rows="5" cols="20" id="campo09"></textarea></p>
+      </div>
+     </fieldset>
+    <p>
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Borrar" />
+    </p>
+   
+</form>
+<!--Fin del formulario-->
+</body>
+
+</html>
+
